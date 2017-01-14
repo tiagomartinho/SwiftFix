@@ -1,11 +1,17 @@
-class MissingMethod {
+class ClassToFix {
 
+  var notExistingVar = ""
+
+  func notExistingMethod() {
+  }
 }
 
 class Foo {
 
     func bar() {
-        let missingMethod = MissingMethod()
-        missingMethod.notExistingMethod()
+        let classToFix = ClassToFix()
+        classToFix.notExistingMethod()
+
+        classToFix.notExistingVar = "some string"
     }
 }

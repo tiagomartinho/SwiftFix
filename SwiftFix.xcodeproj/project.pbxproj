@@ -10,18 +10,35 @@
 		24044B771E2A68B5005B4147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B761E2A68B5005B4147 /* AppDelegate.swift */; };
 		24044B791E2A68B5005B4147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24044B781E2A68B5005B4147 /* Assets.xcassets */; };
 		24044B7C1E2A68B5005B4147 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24044B7A1E2A68B5005B4147 /* MainMenu.xib */; };
-		24044B871E2A68B5005B4147 /* SwiftFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B861E2A68B5005B4147 /* SwiftFixTests.swift */; };
+		24044B981E2A68DF005B4147 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24044B971E2A68DF005B4147 /* Cocoa.framework */; };
+		24044B9D1E2A68DF005B4147 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B9C1E2A68DF005B4147 /* SourceEditorExtension.swift */; };
+		24044B9F1E2A68DF005B4147 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B9E1E2A68DF005B4147 /* SourceEditorCommand.swift */; };
+		24044BA31E2A68DF005B4147 /* Swift Fix.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 24044B951E2A68DF005B4147 /* Swift Fix.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		24044B831E2A68B5005B4147 /* PBXContainerItemProxy */ = {
+		24044BA11E2A68DF005B4147 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24044B6B1E2A68B5005B4147 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 24044B721E2A68B5005B4147;
-			remoteInfo = SwiftFix;
+			remoteGlobalIDString = 24044B941E2A68DF005B4147;
+			remoteInfo = SwiftFixExtension;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24044BA71E2A68DF005B4147 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				24044BA31E2A68DF005B4147 /* Swift Fix.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24044B731E2A68B5005B4147 /* SwiftFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,9 +46,13 @@
 		24044B781E2A68B5005B4147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24044B7B1E2A68B5005B4147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		24044B7D1E2A68B5005B4147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24044B821E2A68B5005B4147 /* SwiftFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		24044B861E2A68B5005B4147 /* SwiftFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFixTests.swift; sourceTree = "<group>"; };
-		24044B881E2A68B5005B4147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24044B951E2A68DF005B4147 /* Swift Fix.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Swift Fix.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24044B971E2A68DF005B4147 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		24044B9B1E2A68DF005B4147 /* SwiftFixExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftFixExtension.entitlements; sourceTree = "<group>"; };
+		24044B9C1E2A68DF005B4147 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		24044B9E1E2A68DF005B4147 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		24044BA01E2A68DF005B4147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24044BA81E2A6E98005B4147 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +63,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24044B7F1E2A68B5005B4147 /* Frameworks */ = {
+		24044B921E2A68DF005B4147 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24044B981E2A68DF005B4147 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +77,10 @@
 		24044B6A1E2A68B5005B4147 = {
 			isa = PBXGroup;
 			children = (
+				24044BA81E2A6E98005B4147 /* Example.swift */,
 				24044B751E2A68B5005B4147 /* SwiftFix */,
-				24044B851E2A68B5005B4147 /* SwiftFixTests */,
+				24044B991E2A68DF005B4147 /* SwiftFixExtension */,
+				24044B961E2A68DF005B4147 /* Frameworks */,
 				24044B741E2A68B5005B4147 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				24044B731E2A68B5005B4147 /* SwiftFix.app */,
-				24044B821E2A68B5005B4147 /* SwiftFixTests.xctest */,
+				24044B951E2A68DF005B4147 /* Swift Fix.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,21 +97,47 @@
 		24044B751E2A68B5005B4147 /* SwiftFix */ = {
 			isa = PBXGroup;
 			children = (
+				24044BAB1E2A7061005B4147 /* Supporting Files */,
+			);
+			path = SwiftFix;
+			sourceTree = "<group>";
+		};
+		24044B961E2A68DF005B4147 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24044B971E2A68DF005B4147 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24044B991E2A68DF005B4147 /* SwiftFixExtension */ = {
+			isa = PBXGroup;
+			children = (
+				24044B9E1E2A68DF005B4147 /* SourceEditorCommand.swift */,
+				24044B9A1E2A68DF005B4147 /* Supporting Files */,
+			);
+			path = SwiftFixExtension;
+			sourceTree = "<group>";
+		};
+		24044B9A1E2A68DF005B4147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24044B9C1E2A68DF005B4147 /* SourceEditorExtension.swift */,
+				24044BA01E2A68DF005B4147 /* Info.plist */,
+				24044B9B1E2A68DF005B4147 /* SwiftFixExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24044BAB1E2A7061005B4147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				24044B761E2A68B5005B4147 /* AppDelegate.swift */,
 				24044B781E2A68B5005B4147 /* Assets.xcassets */,
 				24044B7A1E2A68B5005B4147 /* MainMenu.xib */,
 				24044B7D1E2A68B5005B4147 /* Info.plist */,
 			);
-			path = SwiftFix;
-			sourceTree = "<group>";
-		};
-		24044B851E2A68B5005B4147 /* SwiftFixTests */ = {
-			isa = PBXGroup;
-			children = (
-				24044B861E2A68B5005B4147 /* SwiftFixTests.swift */,
-				24044B881E2A68B5005B4147 /* Info.plist */,
-			);
-			path = SwiftFixTests;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,33 +150,35 @@
 				24044B6F1E2A68B5005B4147 /* Sources */,
 				24044B701E2A68B5005B4147 /* Frameworks */,
 				24044B711E2A68B5005B4147 /* Resources */,
+				24044BA71E2A68DF005B4147 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				24044BA21E2A68DF005B4147 /* PBXTargetDependency */,
 			);
 			name = SwiftFix;
 			productName = SwiftFix;
 			productReference = 24044B731E2A68B5005B4147 /* SwiftFix.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24044B811E2A68B5005B4147 /* SwiftFixTests */ = {
+		24044B941E2A68DF005B4147 /* SwiftFixExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24044B8E1E2A68B5005B4147 /* Build configuration list for PBXNativeTarget "SwiftFixTests" */;
+			buildConfigurationList = 24044BA41E2A68DF005B4147 /* Build configuration list for PBXNativeTarget "SwiftFixExtension" */;
 			buildPhases = (
-				24044B7E1E2A68B5005B4147 /* Sources */,
-				24044B7F1E2A68B5005B4147 /* Frameworks */,
-				24044B801E2A68B5005B4147 /* Resources */,
+				24044B911E2A68DF005B4147 /* Sources */,
+				24044B921E2A68DF005B4147 /* Frameworks */,
+				24044B931E2A68DF005B4147 /* Resources */,
+				24044BAD1E2A71EA005B4147 /* Run SwiftLint Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24044B841E2A68B5005B4147 /* PBXTargetDependency */,
 			);
-			name = SwiftFixTests;
-			productName = SwiftFixTests;
-			productReference = 24044B821E2A68B5005B4147 /* SwiftFixTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = SwiftFixExtension;
+			productName = SwiftFixExtension;
+			productReference = 24044B951E2A68DF005B4147 /* Swift Fix.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -143,11 +195,10 @@
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
 					};
-					24044B811E2A68B5005B4147 = {
+					24044B941E2A68DF005B4147 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 24044B721E2A68B5005B4147;
 					};
 				};
 			};
@@ -165,7 +216,7 @@
 			projectRoot = "";
 			targets = (
 				24044B721E2A68B5005B4147 /* SwiftFix */,
-				24044B811E2A68B5005B4147 /* SwiftFixTests */,
+				24044B941E2A68DF005B4147 /* SwiftFixExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24044B801E2A68B5005B4147 /* Resources */ = {
+		24044B931E2A68DF005B4147 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,6 +239,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24044BAD1E2A71EA005B4147 /* Run SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24044B6F1E2A68B5005B4147 /* Sources */ = {
@@ -198,21 +266,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24044B7E1E2A68B5005B4147 /* Sources */ = {
+		24044B911E2A68DF005B4147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24044B871E2A68B5005B4147 /* SwiftFixTests.swift in Sources */,
+				24044B9D1E2A68DF005B4147 /* SourceEditorExtension.swift in Sources */,
+				24044B9F1E2A68DF005B4147 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		24044B841E2A68B5005B4147 /* PBXTargetDependency */ = {
+		24044BA21E2A68DF005B4147 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24044B721E2A68B5005B4147 /* SwiftFix */;
-			targetProxy = 24044B831E2A68B5005B4147 /* PBXContainerItemProxy */;
+			target = 24044B941E2A68DF005B4147 /* SwiftFixExtension */;
+			targetProxy = 24044BA11E2A68DF005B4147 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,7 +390,9 @@
 		24044B8C1E2A68B5005B4147 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = SwiftFix/Info.plist;
@@ -335,7 +406,9 @@
 		24044B8D1E2A68B5005B4147 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = SwiftFix/Info.plist;
@@ -346,35 +419,37 @@
 			};
 			name = Release;
 		};
-		24044B8F1E2A68B5005B4147 /* Debug */ = {
+		24044BA51E2A68DF005B4147 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SwiftFixExtension/SwiftFixExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SwiftFixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = elit.SwiftFixTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = SwiftFixExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = elit.SwiftFix.SwiftFixExtension;
+				PRODUCT_NAME = "Swift Fix";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftFix.app/Contents/MacOS/SwiftFix";
 			};
 			name = Debug;
 		};
-		24044B901E2A68B5005B4147 /* Release */ = {
+		24044BA61E2A68DF005B4147 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SwiftFixExtension/SwiftFixExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SwiftFixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = elit.SwiftFixTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = SwiftFixExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = elit.SwiftFix.SwiftFixExtension;
+				PRODUCT_NAME = "Swift Fix";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftFix.app/Contents/MacOS/SwiftFix";
 			};
 			name = Release;
 		};
@@ -398,11 +473,11 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		24044B8E1E2A68B5005B4147 /* Build configuration list for PBXNativeTarget "SwiftFixTests" */ = {
+		24044BA41E2A68DF005B4147 /* Build configuration list for PBXNativeTarget "SwiftFixExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24044B8F1E2A68B5005B4147 /* Debug */,
-				24044B901E2A68B5005B4147 /* Release */,
+				24044BA51E2A68DF005B4147 /* Debug */,
+				24044BA61E2A68DF005B4147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

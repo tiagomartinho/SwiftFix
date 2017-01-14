@@ -52,7 +52,8 @@
 		24044B9C1E2A68DF005B4147 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		24044B9E1E2A68DF005B4147 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		24044BA01E2A68DF005B4147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24044BA81E2A6E98005B4147 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		24044BA81E2A6E98005B4147 /* ExampleTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTemplate.swift; sourceTree = "<group>"; };
+		24044BAE1E2A7778005B4147 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +78,8 @@
 		24044B6A1E2A68B5005B4147 = {
 			isa = PBXGroup;
 			children = (
-				24044BA81E2A6E98005B4147 /* Example.swift */,
+				24044BAE1E2A7778005B4147 /* Example.swift */,
+				24044BA81E2A6E98005B4147 /* ExampleTemplate.swift */,
 				24044B751E2A68B5005B4147 /* SwiftFix */,
 				24044B991E2A68DF005B4147 /* SwiftFixExtension */,
 				24044B961E2A68DF005B4147 /* Frameworks */,

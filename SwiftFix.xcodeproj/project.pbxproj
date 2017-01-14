@@ -14,7 +14,6 @@
 		24044B9D1E2A68DF005B4147 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B9C1E2A68DF005B4147 /* SourceEditorExtension.swift */; };
 		24044B9F1E2A68DF005B4147 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044B9E1E2A68DF005B4147 /* SourceEditorCommand.swift */; };
 		24044BA31E2A68DF005B4147 /* Swift Fix.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 24044B951E2A68DF005B4147 /* Swift Fix.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		24044BB01E2A7ACA005B4147 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24044BAE1E2A7778005B4147 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24044BB01E2A7ACA005B4147 /* Example.swift in Sources */,
 				24044B771E2A68B5005B4147 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +474,7 @@
 				24044B8D1E2A68B5005B4147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24044BA41E2A68DF005B4147 /* Build configuration list for PBXNativeTarget "SwiftFixExtension" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +483,7 @@
 				24044BA61E2A68DF005B4147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
